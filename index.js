@@ -92,9 +92,7 @@ function displayResult() {
 function updateCountdown() {
   minutes = Math.floor(totalSeconds / 60);
   seconds = totalSeconds % 60;
-  countdownElement.textContent = `${minutes}:${
-    seconds < 10 ? "0" : ""
-  }${seconds}`;
+  countdownElement.textContent = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
   if (totalSeconds >= 0) {
     --totalSeconds;
   }
